@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Stolen Bike Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row center-align">
+        <h1>Bloomberg stuff</h1>
+        <div class="col s4 offset-s4 blue-text text-darken-4">
+          <p>
+            Find your news is a nice cool super website to possibly locate news based on a keyword (more options coming soon!).
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="blue-text text-darken-4 center">Search News</h3>
+        <form class="col s4 offset-s4 center-align" id="color-form">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" name="search-term" id="search-input">
+              <label for="search-term">Enter keyword</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select multiple id="source-selector">
+                <option value="" disabled>Choose Source(s)</option>
+                <option value="associated-press">Associated Press</option>
+                <option value="bbc-news">BBC News</option>
+                <option value="cnbc">CNBC</option>
+                <option value="daily-mail">Daily Mail (UK)</option>
+                <option value="the-huffington-post">The Huffington Post</option>
+                <option value="independent">Independent (UK)</option>
+                <option value="the-new-york-times">The New York Times</option>
+                <option value="reuters">Reuters</option>
+                <option value="the-washington-post">The Washington Post</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn waves-effect waves-blue blue darken-4">Submit</button>
+        </form>
+
+
+      </div>
+      <div class="row">
+        <div class="col s8 offset-s2 center-align">
+          <ul id="results-list">
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
